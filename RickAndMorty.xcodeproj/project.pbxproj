@@ -22,6 +22,10 @@
 		947EB98C2BD8204100205931 /* CharacterResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB98B2BD8204100205931 /* CharacterResults.swift */; };
 		947EB98E2BD8244500205931 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB98D2BD8244500205931 /* Utils.swift */; };
 		947EB9902BD8245400205931 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB98F2BD8245400205931 /* Int+Extension.swift */; };
+		947EB99A2BD8278F00205931 /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9992BD8278F00205931 /* CharactersListViewModel.swift */; };
+		947EB99C2BD827D900205931 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB99B2BD827D900205931 /* CharactersListView.swift */; };
+		947EB99F2BD8285A00205931 /* AlertUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB99E2BD8285A00205931 /* AlertUIModel.swift */; };
+		947EB9A12BD8289400205931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9A02BD8289400205931 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		947EB98B2BD8204100205931 /* CharacterResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResults.swift; sourceTree = "<group>"; };
 		947EB98D2BD8244500205931 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		947EB98F2BD8245400205931 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		947EB9992BD8278F00205931 /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
+		947EB99B2BD827D900205931 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		947EB99E2BD8285A00205931 /* AlertUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUIModel.swift; sourceTree = "<group>"; };
+		947EB9A02BD8289400205931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,8 @@
 		947EB9512BD8196600205931 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				947EB99D2BD8284300205931 /* Views */,
+				947EB9912BD8269B00205931 /* Controllers */,
 				947EB97F2BD81AE600205931 /* Utils */,
 				947EB97C2BD81A8500205931 /* API */,
 				947EB9522BD8196600205931 /* RickAndMortyApp.swift */,
@@ -181,6 +191,32 @@
 				947EB98B2BD8204100205931 /* CharacterResults.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		947EB9912BD8269B00205931 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				947EB9922BD826CF00205931 /* CharactersList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		947EB9922BD826CF00205931 /* CharactersList */ = {
+			isa = PBXGroup;
+			children = (
+				947EB9992BD8278F00205931 /* CharactersListViewModel.swift */,
+				947EB99B2BD827D900205931 /* CharactersListView.swift */,
+			);
+			path = CharactersList;
+			sourceTree = "<group>";
+		};
+		947EB99D2BD8284300205931 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				947EB99E2BD8285A00205931 /* AlertUIModel.swift */,
+				947EB9A02BD8289400205931 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947EB99A2BD8278F00205931 /* CharactersListViewModel.swift in Sources */,
 				947EB98C2BD8204100205931 /* CharacterResults.swift in Sources */,
+				947EB99C2BD827D900205931 /* CharactersListView.swift in Sources */,
 				947EB9812BD81AFC00205931 /* URLSession+Extension.swift in Sources */,
 				947EB98E2BD8244500205931 /* Utils.swift in Sources */,
+				947EB9A12BD8289400205931 /* LoadingView.swift in Sources */,
 				947EB9552BD8196600205931 /* ContentView.swift in Sources */,
+				947EB99F2BD8285A00205931 /* AlertUIModel.swift in Sources */,
 				947EB9832BD81B2000205931 /* Data+Extension.swift in Sources */,
 				947EB9902BD8245400205931 /* Int+Extension.swift in Sources */,
 				947EB9872BD81E8000205931 /* Character.swift in Sources */,
