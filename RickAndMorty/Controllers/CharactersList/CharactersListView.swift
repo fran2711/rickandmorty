@@ -26,8 +26,8 @@ struct CharactersListView<ViewModel: CharactersListVM>: View {
     
     @StateObject var viewModel: ViewModel
     
-    public init(viewModel: ViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
+    public init(viewModel: @autoclosure @escaping () -> ViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel())
     }
     
     var body: some View {
@@ -36,7 +36,7 @@ struct CharactersListView<ViewModel: CharactersListVM>: View {
             List(viewModel.charactersList) { character in
                 
                 NavigationLink {
-                   
+                   CharacterDetailView(viewModel: CharacterDetailViewModel(character: character))
                 } label: {
                     CharacterCell(imageUrl: character.imageUrl,
                                   name: character.name)

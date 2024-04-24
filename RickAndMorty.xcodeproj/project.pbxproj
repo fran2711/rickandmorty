@@ -29,6 +29,8 @@
 		947EB9A62BD8E6A600205931 /* rickandmortycharacterlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 947EB9A52BD8E6A600205931 /* rickandmortycharacterlist.json */; };
 		947EB9A82BD8E73200205931 /* CharactersListAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9A72BD8E73200205931 /* CharactersListAPITest.swift */; };
 		947EB9AA2BD8EC3D00205931 /* CharacterListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9A92BD8EC3D00205931 /* CharacterListViewModelTest.swift */; };
+		947EB9AE2BD9002600205931 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9AC2BD9002600205931 /* CharacterDetailView.swift */; };
+		947EB9AF2BD9002600205931 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9AD2BD9002600205931 /* CharacterDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		947EB9A52BD8E6A600205931 /* rickandmortycharacterlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rickandmortycharacterlist.json; sourceTree = "<group>"; };
 		947EB9A72BD8E73200205931 /* CharactersListAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListAPITest.swift; sourceTree = "<group>"; };
 		947EB9A92BD8EC3D00205931 /* CharacterListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTest.swift; sourceTree = "<group>"; };
+		947EB9AC2BD9002600205931 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		947EB9AD2BD9002600205931 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 		947EB9912BD8269B00205931 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				947EB9AB2BD9000300205931 /* CharacterDetail */,
 				947EB9922BD826CF00205931 /* CharactersList */,
 			);
 			path = Controllers;
@@ -234,6 +239,15 @@
 				947EB9A52BD8E6A600205931 /* rickandmortycharacterlist.json */,
 			);
 			path = JsonMocks;
+			sourceTree = "<group>";
+		};
+		947EB9AB2BD9000300205931 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				947EB9AC2BD9002600205931 /* CharacterDetailView.swift */,
+				947EB9AD2BD9002600205931 /* CharacterDetailViewModel.swift */,
+			);
+			path = CharacterDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +385,8 @@
 				947EB99A2BD8278F00205931 /* CharactersListViewModel.swift in Sources */,
 				947EB98C2BD8204100205931 /* CharacterResults.swift in Sources */,
 				947EB99C2BD827D900205931 /* CharactersListView.swift in Sources */,
+				947EB9AE2BD9002600205931 /* CharacterDetailView.swift in Sources */,
+				947EB9AF2BD9002600205931 /* CharacterDetailViewModel.swift in Sources */,
 				947EB9812BD81AFC00205931 /* URLSession+Extension.swift in Sources */,
 				947EB98E2BD8244500205931 /* Utils.swift in Sources */,
 				947EB9A12BD8289400205931 /* LoadingView.swift in Sources */,
