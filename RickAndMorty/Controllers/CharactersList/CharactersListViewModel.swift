@@ -38,7 +38,8 @@ class CharactersListViewModel: CharactersListVM {
             defer { self.loading = false }
         
             do {
-                guard let nextPage = page, let charactersResult = try await dataSource.fetchCharacters(page: nextPage) else {
+                guard let nextPage = page, 
+                        let charactersResult = try await dataSource.fetchCharacters(page: nextPage) else {
                     return
                 }
                 let nextUrl = charactersResult.info.next?.components(separatedBy: "?")

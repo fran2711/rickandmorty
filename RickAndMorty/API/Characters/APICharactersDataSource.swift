@@ -24,7 +24,7 @@ class CharactersAPI: APICharactersDataSource {
 
 class CharactersMockAPI: APICharactersDataSource {
     func fetchCharacters(page: String) async throws -> CharacterResults? {
-        return loadJson(filename: "", with: CharacterResults.self)
+        return loadJson(filename: "rickandmortycharacterlist", with: CharacterResults.self)
     }
 
 }
