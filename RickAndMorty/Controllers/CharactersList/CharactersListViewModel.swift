@@ -45,6 +45,11 @@ class CharactersListViewModel: CharactersListVM {
                 let nextUrl = charactersResult.info.next?.components(separatedBy: "?")
                 page = nextUrl?[1]
                 charactersList.append(contentsOf: charactersResult.results)
+            } catch {
+                self.alert = AlertUIModel(title: "Error", message: error.localizedDescription,
+                                                        actions:
+                                                          [.default(title: "Retry", action: { self.getCharactersList() }),
+                                                           .cancel(action: .none)])
             }
         }
     }
