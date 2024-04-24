@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Character: Decodable {
-    let id: Int
+public struct Character: Decodable, Identifiable {
+
+    public let id: Int
     let name: String
     let status: String
     let species: String
@@ -20,6 +21,23 @@ struct Character: Decodable {
     let episode: [String]
     let url: String
     let created: String
+
+}
+
+extension Character {
+    var imageUrl: URL?  {
+        URL(string: image)
+    }
+}
+
+extension Character: Hashable {
+    public func hash(into hasher: inout Hasher) {
+          return hasher.combine(id)
+      }
+    
+    public static func == (lhs: Character, rhs: Character) -> Bool {
+        lhs.id == rhs.id
+    }
 }
 
 struct CharacterOrigin: Decodable {

@@ -10,20 +10,21 @@ import Foundation
 //https://rickandmortyapi.com/api/character/?page=19
 
 protocol APICharactersDataSource {
-    func fetchCharacters(page: Int) async throws -> CharacterResults?
+    func fetchCharacters(page: String) async throws -> CharacterResults?
 }
 
 class CharactersAPI: APICharactersDataSource {
-    let url = "https://rickandmortyapi.com/api/character/?page="
+    let url = "https://rickandmortyapi.com/api/character/?"
     
-    func fetchCharacters(page: Int) async throws -> CharacterResults? {
-        let response = try await API.data(url: url + page.toString, method: .GET)
+    func fetchCharacters(page: String) async throws -> CharacterResults? {
+        let response = try await API.data(url: url + page, method: .GET)
         return try response?.decodedResponse(CharacterResults.self)
     }
 }
 
 class CharactersMockAPI: APICharactersDataSource {
-    func fetchCharacters(page: Int) async throws -> CharacterResults? {
+    func fetchCharacters(page: String) async throws -> CharacterResults? {
         return loadJson(filename: "", with: CharacterResults.self)
     }
+
 }

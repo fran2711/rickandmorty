@@ -26,6 +26,7 @@
 		947EB99C2BD827D900205931 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB99B2BD827D900205931 /* CharactersListView.swift */; };
 		947EB99F2BD8285A00205931 /* AlertUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB99E2BD8285A00205931 /* AlertUIModel.swift */; };
 		947EB9A12BD8289400205931 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9A02BD8289400205931 /* LoadingView.swift */; };
+		947EB9A32BD8E35900205931 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EB9A22BD8E35900205931 /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		947EB99B2BD827D900205931 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		947EB99E2BD8285A00205931 /* AlertUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUIModel.swift; sourceTree = "<group>"; };
 		947EB9A02BD8289400205931 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		947EB9A22BD8E35900205931 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +120,11 @@
 		947EB9512BD8196600205931 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				947EB9522BD8196600205931 /* RickAndMortyApp.swift */,
 				947EB99D2BD8284300205931 /* Views */,
 				947EB9912BD8269B00205931 /* Controllers */,
 				947EB97F2BD81AE600205931 /* Utils */,
 				947EB97C2BD81A8500205931 /* API */,
-				947EB9522BD8196600205931 /* RickAndMortyApp.swift */,
 				947EB9542BD8196600205931 /* ContentView.swift */,
 				947EB9562BD8196700205931 /* Assets.xcassets */,
 				947EB9582BD8196700205931 /* Preview Content */,
@@ -215,6 +217,7 @@
 			children = (
 				947EB99E2BD8285A00205931 /* AlertUIModel.swift */,
 				947EB9A02BD8289400205931 /* LoadingView.swift */,
+				947EB9A22BD8E35900205931 /* CharacterCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947EB9A32BD8E35900205931 /* CharacterCell.swift in Sources */,
 				947EB99A2BD8278F00205931 /* CharactersListViewModel.swift in Sources */,
 				947EB98C2BD8204100205931 /* CharacterResults.swift in Sources */,
 				947EB99C2BD827D900205931 /* CharactersListView.swift in Sources */,
